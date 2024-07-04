@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
+// Navlink는 클릭을 받으면, .active 클래스가 추가됨
 import { onChangeCategory } from '../../store/product';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 const HeaderBlock = styled.div`
   background: #023586;
@@ -25,7 +26,7 @@ const Nav = styled.nav`
     }
     a {
       padding: 40px 25px 40px 0;
-      font-size: 14px;
+      &:hover, &.active { color: #f00; }
     }
     .depth2 {
       position: absolute;
@@ -45,11 +46,19 @@ const Nav = styled.nav`
 
 const OtherNav = styled.div`
 list-style-type: none;
-a { padding-left: 25px; }
+a { padding-left: 25px; 
+  &:hover, &.active { color: #f00; }
+}
 `
 
 const Header = () => {
   const dispatch = useDispatch();
+  const user = useSelector(state=>state.members.logined)
+  const [isUser, setIsUser] = useState(user)
+
+  useEffect(()=>{
+    setIsUser(user)
+  }, [user])
 
   return (
     <HeaderBlock>
@@ -57,17 +66,14 @@ const Header = () => {
         <Nav>
           <ul className='depth1'>
             <li>
-              <Link to='/employee'>파바의 인재</Link>
+              <NavLink to='/employee'>파바의 인재</NavLink>
             </li>
             <li>
-              <Link to='/movie'>파바 매거진</Link>
+              <NavLink to='/movie'>파바 매거진</NavLink>
             </li>
             <li>
-              <Link to='/product' onClick={()=>dispatch(onChangeCategory('all'))}>상품 안내</Link>
+              <NavLink to='/product' onClick={()=>dispatch(onChangeCategory('all'))}>상품 안내</NavLink>
               <ul className="depth2">
-                <li>
-                  <Link to='/product' onClick={()=>dispatch(onChangeCategory('all'))}>전체</Link>
-                </li>
                 <li>
                   <Link to='/product' onClick={()=>dispatch(onChangeCategory('bread'))}>브레드</Link>
                 </li>
@@ -80,18 +86,27 @@ const Header = () => {
               </ul>
             </li>
             <li>
-              <Link to='/stroe'>매장 정보</Link>
+              <NavLink to='/stroe'>매장 정보</NavLink>
             </li>
           </ul>
         </Nav>
         <h1>
-          <Link to='/'>PARIS BAGUETTE</Link>
+          <NavLink to='/'>PARIS BAGUETTE</NavLink>
         </h1>
         <OtherNav>
           <li>
-              <Link to="/cart">장바구니</Link>
-              <Link to="/login">로그인</Link>
-              <Link to="/join">회원가입</Link>
+              <NavLink to="/cart">장바구니</NavLink>
+              { !isUser ?               
+                <>
+                  <NavLink to="/login">로그인</NavLink>
+                  <NavLink to="/join">회원가입</NavLink>
+                </>
+                :
+                <>
+                  <NavLink to="/login">로그아웃</NavLink>
+                  <NavLink to="/join">정보수정({isUser.userName})</NavLink>
+                </>
+              }
           </li>
         </OtherNav>
       </div>
