@@ -1,12 +1,12 @@
 import React from 'react';
 import Title from '../components/common/Title';
 
-const EmployeeView = () => {
+const JoinView = () => {
   return (
     <div className='row'>
-      <Title title="파바의 인재" />
+      <Title title="회원가입" />
     </div>
   );
 };
 
-export default EmployeeView;
+export default JoinView;

@@ -1,12 +1,12 @@
 import React from 'react';
 import Title from '../components/common/Title';
 
-const EmployeeView = () => {
+const LoginView = () => {
   return (
     <div className='row'>
-      <Title title="파바의 인재" />
+      <Title title="로그인" />
     </div>
   );
 };
 
-export default EmployeeView;
+export default LoginView;

@@ -1,9 +1,10 @@
 import React from 'react';
+import Title from '../components/common/Title';
 
 const MovieView = () => {
   return (
-    <div>
-      영화목록
+    <div className='row'>
+      <Title title="파바의 매거진" />
     </div>
   );
 };
