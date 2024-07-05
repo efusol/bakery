@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import {NavLink, Link} from 'react-router-dom';
+import {NavLink, Link, useNavigate} from 'react-router-dom';
 // Navlink는 클릭을 받으면, .active 클래스가 추가됨
 import { onChangeCategory } from '../../store/product';
 import { useDispatch, useSelector } from 'react-redux';
+import { userLogout } from '../../store/member';
 
 const HeaderBlock = styled.div`
   background: #023586;
@@ -53,8 +54,9 @@ a { padding-left: 25px;
 
 const Header = () => {
   const dispatch = useDispatch();
-  const user = useSelector(state=>state.members.logined)
+  const user = useSelector(state=>state.members.user)
   const [isUser, setIsUser] = useState(user)
+  const navigate = useNavigate()
 
   useEffect(()=>{
     setIsUser(user)
@@ -62,7 +64,7 @@ const Header = () => {
 
   return (
     <HeaderBlock>
-      <div className='row'>        
+      <div className='row'>
         <Nav>
           <ul className='depth1'>
             <li>
@@ -103,7 +105,7 @@ const Header = () => {
                 </>
                 :
                 <>
-                  <NavLink to="/login">로그아웃</NavLink>
+                  <a href='#none' onClick={()=>{dispatch(userLogout()); navigate('/')}}>로그아웃</a>
                   <NavLink to="/join">정보수정({isUser.userName})</NavLink>
                 </>
               }

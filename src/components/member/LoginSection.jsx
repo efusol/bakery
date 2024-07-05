@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import { userLogin } from '../../store/member';
 import { useNavigate } from 'react-router-dom';
@@ -53,6 +53,8 @@ const LoginSection = () => {
  */
   const dispatch = useDispatch()
   const navigate = useNavigate()
+  const members = useSelector(state=>state.members.members)
+  console.log(members)
 
   const [userIdPw, setUserIdPw] = useState({
     userEmail: '',
@@ -66,8 +68,22 @@ const LoginSection = () => {
 
   const onLogin = (e) => {
     e.preventDefault()
-    dispatch(userLogin(userIdPw))
-    navigate('/')
+    if (!userIdPw.userEmail) {
+      alert('이메일을 입력하세요')
+      return
+    }
+    if (!userIdPw.userPw) {
+      alert('비밀번호를 입력하세요')
+      return
+    }
+    const user = members.find(item=>item.userEmail == userIdPw.userEmail && item.userPw == userIdPw.userPw)
+    if (user) {
+      dispatch(userLogin(userIdPw))
+      navigate('/')
+    } else {
+      alert('회원이 아닙니다')
+      return
+    }
   }
 
   return (
