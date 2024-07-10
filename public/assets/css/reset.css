@@ -8,5 +8,5 @@ button, input[type=button], input[type=submit], input[type=text], input[type=pas
 button, input[type=button], input[type=submit] { cursor: pointer; }
 fieldset { border: none; }
 legend { display: none; }
-.build { position: absolute; width: 1px; height: 1px; overflow: hidden; text-indent: -99999px; }
+.blind { position: absolute; width: 1px; height: 1px; overflow: hidden; text-indent: -99999px; }
 .row { max-width: 1200px; margin: 0 auto; }
