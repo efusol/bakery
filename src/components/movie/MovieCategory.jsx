@@ -19,13 +19,17 @@ const MovieCategory = ({changeType, categoryClick}) => {
     { name: 'TV 순위',       media: 'tv',      type: 'top_rated' },
     { name: 'TV SHOW',       media: 'tv',      type: 'on_the_air' }
   ]
+
+  const categoryPage = (item) => {
+    categoryClick(item, 1)
+  }
   return (
     <MovieCategoryBlock>
       {
         movieType.map((item, index)=>(
           <button key={index} type="button" 
           className={ changeType===item.name ? "on" : ""} 
-          onClick={ ()=>categoryClick(item)}
+          onClick={ ()=>categoryPage(item)}
           >
             {item.name}
           </button>
