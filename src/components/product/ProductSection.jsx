@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import { fetchProducts } from '../../store/product';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const ProductSectionBlock = styled.div`
 
@@ -51,12 +52,12 @@ const ProductSection = ({title}) => {
           products && products.map((item, index) => (
           <ListBlock key={index}>
             <div className="photo">
-              <img src={item.image} alt={item.title} />
+              <Link to={`/product/${item.id}`} state={{item, index}}><img src={item.image} alt={item.title} /></Link>
             </div>
             <div className="info">
-              <p>{item.title}</p>
+              <p><Link to={`/product/${item.id}`} state={{item, index}}>{item.title}</Link></p>
               <p>{item.price}</p>
-              <p>{item.discription}</p>
+              <p>{item.description}</p>
             </div>
           </ListBlock>))
         }

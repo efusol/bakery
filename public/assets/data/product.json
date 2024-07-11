@@ -4,7 +4,7 @@
     "id" : 1001,
     "title" : "빵1",
     "price" : 1000,
-    "discription" : "빵1 요약설명",
+    "description" : "빵1 요약<strong>설명</strong>",
     "image" : "./assets/image/bread1.png"
   },
   {
@@ -12,7 +12,7 @@
     "id" : 1002,
     "title" : "빵2",
     "price" : 1000,
-    "discription" : "빵2 요약설명",
+    "description" : "빵2 요약설명",
     "image" : "./assets/image/bread1.png"
   },
   {
@@ -20,7 +20,7 @@
     "id" : 1003,
     "title" : "빵3",
     "price" : 1000,
-    "discription" : "빵3 요약설명",
+    "description" : "빵3 요약설명",
     "image" : "./assets/image/bread1.png"
   },
   {
@@ -28,7 +28,7 @@
     "id" : 1004,
     "title" : "빵4",
     "price" : 1000,
-    "discription" : "빵4 요약설명",
+    "description" : "빵4 요약설명",
     "image" : "./assets/image/bread1.png"
   },
   {
@@ -36,7 +36,7 @@
     "id" : 1005,
     "title" : "빵5",
     "price" : 1000,
-    "discription" : "빵5 요약설명",
+    "description" : "빵5 요약설명",
     "image" : "./assets/image/bread1.png"
   },
   {
@@ -44,7 +44,7 @@
     "id" : 1006,
     "title" : "빵6",
     "price" : 1000,
-    "discription" : "빵6 요약설명",
+    "description" : "빵6 요약설명",
     "image" : "./assets/image/bread1.png"
   },
   {
@@ -52,7 +52,7 @@
     "id" : 1007,
     "title" : "빵7",
     "price" : 1000,
-    "discription" : "빵7 요약설명",
+    "description" : "빵7 요약설명",
     "image" : "./assets/image/bread1.png"
   },
   {
@@ -60,7 +60,7 @@
     "id" : 1008,
     "title" : "빵8",
     "price" : 1000,
-    "discription" : "빵8 요약설명",
+    "description" : "빵8 요약설명",
     "image" : "./assets/image/bread1.png"
   },
   {
@@ -68,7 +68,7 @@
     "id" : 1009,
     "title" : "빵9",
     "price" : 1000,
-    "discription" : "빵9 요약설명",
+    "description" : "빵9 요약설명",
     "image" : "./assets/image/bread1.png"
   },
   {
@@ -76,7 +76,7 @@
     "id" : 1010,
     "title" : "빵10",
     "price" : 1000,
-    "discription" : "빵10 요약설명",
+    "description" : "빵10 요약설명",
     "image" : "./assets/image/bread1.png"
   },
   {
@@ -84,7 +84,7 @@
     "id" : 2001,
     "title" : "케이크1",
     "price" : 1000,
-    "discription" : "케이크1 요약설명",
+    "description" : "케이크1 요약설명",
     "image" : "./assets/image/cake1.jpg"
   },
   {
@@ -92,7 +92,7 @@
     "id" : 2002,
     "title" : "케이크2",
     "price" : 1000,
-    "discription" : "케이크2 요약설명",
+    "description" : "케이크2 요약설명",
     "image" : "./assets/image/cake1.jpg"
   },
   {
@@ -100,7 +100,7 @@
     "id" : 2003,
     "title" : "케이크3",
     "price" : 1000,
-    "discription" : "케이크3 요약설명",
+    "description" : "케이크3 요약설명",
     "image" : "./assets/image/cake1.jpg"
   },
   {
@@ -108,7 +108,7 @@
     "id" : 2004,
     "title" : "케이크4",
     "price" : 1000,
-    "discription" : "케이크4 요약설명",
+    "description" : "케이크4 요약설명",
     "image" : "./assets/image/cake1.jpg"
   },
   {
@@ -116,7 +116,7 @@
     "id" : 2005,
     "title" : "케이크5",
     "price" : 1000,
-    "discription" : "케이크5 요약설명",
+    "description" : "케이크5 요약설명",
     "image" : "./assets/image/cake1.jpg"
   },
   {
@@ -124,7 +124,7 @@
     "id" : 2006,
     "title" : "케이크6",
     "price" : 1000,
-    "discription" : "케이크6 요약설명",
+    "description" : "케이크6 요약설명",
     "image" : "./assets/image/cake1.jpg"
   },
   {
@@ -132,7 +132,7 @@
     "id" : 2007,
     "title" : "케이크7",
     "price" : 1000,
-    "discription" : "케이크7 요약설명",
+    "description" : "케이크7 요약설명",
     "image" : "./assets/image/cake1.jpg"
   },
   {
@@ -140,7 +140,7 @@
     "id" : 2008,
     "title" : "케이크8",
     "price" : 1000,
-    "discription" : "케이크8 요약설명",
+    "description" : "케이크8 요약설명",
     "image" : "./assets/image/cake1.jpg"
   },
   {
@@ -148,7 +148,7 @@
     "id" : 2009,
     "title" : "케이크9",
     "price" : 1000,
-    "discription" : "케이크9 요약설명",
+    "description" : "케이크9 요약설명",
     "image" : "./assets/image/cake1.jpg"
   },
   {
@@ -156,7 +156,7 @@
     "id" : 2010,
     "title" : "케이크10",
     "price" : 1000,
-    "discription" : "케이크10 요약설명",
+    "description" : "케이크10 요약설명",
     "image" : "./assets/image/cake1.jpg"
   },
   {
@@ -164,7 +164,7 @@
     "id" : 3001,
     "title" : "샌드위치1",
     "price" : 1000,
-    "discription" : "샌드위치1 요약설명",
+    "description" : "샌드위치1 요약설명",
     "image" : "./assets/image/sand1.jpg"
   },
   {
@@ -172,7 +172,7 @@
     "id" : 3002,
     "title" : "샌드위치2",
     "price" : 1000,
-    "discription" : "샌드위치2 요약설명",
+    "description" : "샌드위치2 요약설명",
     "image" : "./assets/image/sand1.jpg"
   },
   {
@@ -180,7 +180,7 @@
     "id" : 3003,
     "title" : "샌드위치3",
     "price" : 1000,
-    "discription" : "샌드위치3 요약설명",
+    "description" : "샌드위치3 요약설명",
     "image" : "./assets/image/sand1.jpg"
   },
   {
@@ -188,7 +188,7 @@
     "id" : 3004,
     "title" : "샌드위치4",
     "price" : 1000,
-    "discription" : "샌드위치4 요약설명",
+    "description" : "샌드위치4 요약설명",
     "image" : "./assets/image/sand1.jpg"
   },
   {
@@ -196,7 +196,7 @@
     "id" : 3005,
     "title" : "샌드위치5",
     "price" : 1000,
-    "discription" : "샌드위치5 요약설명",
+    "description" : "샌드위치5 요약설명",
     "image" : "./assets/image/sand1.jpg"
   },
   {
@@ -204,7 +204,7 @@
     "id" : 3006,
     "title" : "샌드위치6",
     "price" : 1000,
-    "discription" : "샌드위치6 요약설명",
+    "description" : "샌드위치6 요약설명",
     "image" : "./assets/image/sand1.jpg"
   },
   {
@@ -212,7 +212,7 @@
     "id" : 3007,
     "title" : "샌드위치7",
     "price" : 1000,
-    "discription" : "샌드위치7 요약설명",
+    "description" : "샌드위치7 요약설명",
     "image" : "./assets/image/sand1.jpg"
   },
   {
@@ -220,7 +220,7 @@
     "id" : 3008,
     "title" : "샌드위치8",
     "price" : 1000,
-    "discription" : "샌드위치8 요약설명",
+    "description" : "샌드위치8 요약설명",
     "image" : "./assets/image/sand1.jpg"
   },
   {
@@ -228,7 +228,7 @@
     "id" : 3009,
     "title" : "샌드위치9",
     "price" : 1000,
-    "discription" : "샌드위치9 요약설명",
+    "description" : "샌드위치9 요약설명",
     "image" : "./assets/image/sand1.jpg"
   },
   {
@@ -236,7 +236,7 @@
     "id" : 3010,
     "title" : "샌드위치10",
     "price" : 1000,
-    "discription" : "샌드위치10 요약설명",
+    "description" : "샌드위치10 요약설명",
     "image" : "./assets/image/sand1.jpg"
   }
 ]

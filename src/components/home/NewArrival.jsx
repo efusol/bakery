@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
@@ -58,99 +59,99 @@ const NewArrival = () => {
   const products = [
     {
       image: './assets/image/new1.jpg',
-      name: '제주몽생이샌드',
-      desc: '아주 맛있어요',
+      title: '제주몽생이샌드',
+      description: '아주 맛있어요',
       comment: '1인당 5EA 구매 한정',
       price: 50000
     },
     {
       image: './assets/image/new2.jpg',
-      name: '제주몽생이샌드',
-      desc: '아주 맛있어요',
+      title: '제주몽생이샌드',
+      description: '아주 맛있어요',
       comment: '1인당 5EA 구매 한정',
       price: 50000
     },
     {
       image: './assets/image/new3.png',
-      name: '제주몽생이샌드',
-      desc: '아주 맛있어요',
+      title: '제주몽생이샌드',
+      description: '아주 맛있어요',
       comment: '1인당 5EA 구매 한정',
       price: 50000
     },
     {
       image: './assets/image/new4.jpg',
-      name: '제주몽생이샌드',
-      desc: '아주 맛있어요',
+      title: '제주몽생이샌드',
+      description: '아주 맛있어요',
       comment: '1인당 5EA 구매 한정',
       price: 50000
     },
     {
       image: './assets/image/new5.png',
-      name: '제주몽생이샌드',
-      desc: '아주 맛있어요',
+      title: '제주몽생이샌드',
+      description: '아주 맛있어요',
       comment: '1인당 5EA 구매 한정',
       price: 50000
     },
     {
       image: './assets/image/new6.png',
-      name: '제주몽생이샌드',
-      desc: '아주 맛있어요',
+      title: '제주몽생이샌드',
+      description: '아주 맛있어요',
       comment: '1인당 5EA 구매 한정',
       price: 50000
     },
     {
       image: './assets/image/new7.jpg',
-      name: '제주몽생이샌드',
-      desc: '아주 맛있어요',
+      title: '제주몽생이샌드',
+      description: '아주 맛있어요',
       comment: '1인당 5EA 구매 한정',
       price: 50000
     },
     {
       image: './assets/image/new1.jpg',
-      name: '제주몽생이샌드',
-      desc: '아주 맛있어요',
+      title: '제주몽생이샌드',
+      description: '아주 맛있어요',
       comment: '1인당 5EA 구매 한정',
       price: 50000
     },
     {
       image: './assets/image/new2.jpg',
-      name: '제주몽생이샌드',
-      desc: '아주 맛있어요',
+      title: '제주몽생이샌드',
+      description: '아주 맛있어요',
       comment: '1인당 5EA 구매 한정',
       price: 50000
     },
     {
       image: './assets/image/new3.png',
-      name: '제주몽생이샌드',
-      desc: '아주 맛있어요',
+      title: '제주몽생이샌드',
+      description: '아주 맛있어요',
       comment: '1인당 5EA 구매 한정',
       price: 50000
     },
     {
       image: './assets/image/new4.jpg',
-      name: '제주몽생이샌드',
-      desc: '아주 맛있어요',
+      title: '제주몽생이샌드',
+      description: '아주 맛있어요',
       comment: '1인당 5EA 구매 한정',
       price: 50000
     },
     {
       image: './assets/image/new5.png',
-      name: '제주몽생이샌드',
-      desc: '아주 맛있어요',
+      title: '제주몽생이샌드',
+      description: '아주 맛있어요',
       comment: '1인당 5EA 구매 한정',
       price: 50000
     },
     {
       image: './assets/image/new6.png',
-      name: '제주몽생이샌드',
-      desc: '아주 맛있어요',
+      title: '제주몽생이샌드',
+      description: '아주 맛있어요',
       comment: '1인당 5EA 구매 한정',
       price: 50000
     },
     {
       image: './assets/image/new7.jpg',
-      name: '제주몽생이샌드',
-      desc: '아주 맛있어요',
+      title: '제주몽생이샌드',
+      description: '아주 맛있어요',
       comment: '1인당 5EA 구매 한정',
       price: 50000
     }
@@ -164,11 +165,11 @@ const NewArrival = () => {
           products.map((item, index) => (
             <LiBlock key={index}>
               <div className="imgBox">
-                <img src={item.image} alt={item.name} />
+                <Link to={`product/${index}`} state={{item, index}}><img src={item.image} alt={item.title} /></Link>
               </div>
               <div className="infoBox">
-                <p style={{fontSize: '18px'}}>{item.name}</p>
-                <p>{item.desc}</p>
+                <p style={{fontSize: '18px'}}>{item.title}</p>
+                <p>{item.description}</p>
                 <p>{item.comment}</p>
                 <p><strong>￦{item.price.toLocaleString()}</strong></p>
               </div>
