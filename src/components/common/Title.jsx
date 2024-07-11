@@ -1,10 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const TitleBlock = styled.div`
-  font-size: 50px;
-  text-align: center;
-  margin: 50px 0;
+    font-size:50px;
+    text-align:center;
+    margin:50px 0;
 `
 
 const Title = ({title}) => {

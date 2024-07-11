@@ -12,7 +12,7 @@
     "id" : 1002,
     "title" : "빵2",
     "price" : 1000,
-    "description" : "빵2 요약설명",
+    "description" : "빵2 요약<br />설명",
     "image" : "./assets/image/bread1.png"
   },
   {
@@ -97,6 +97,14 @@
   },
   {
     "category" : "cake",
+    "id" : 2002,
+    "title" : "케이크2",
+    "price" : 1000,
+    "description" : "케이크2 요약설명",
+    "image" : "./assets/image/cake1.jpg"
+  },
+  {
+    "category" : "cake",
     "id" : 2003,
     "title" : "케이크3",
     "price" : 1000,
@@ -160,7 +168,7 @@
     "image" : "./assets/image/cake1.jpg"
   },
   {
-    "category" : "sandwich",
+    "category" : "sandwitch",
     "id" : 3001,
     "title" : "샌드위치1",
     "price" : 1000,
@@ -168,7 +176,7 @@
     "image" : "./assets/image/sand1.jpg"
   },
   {
-    "category" : "sandwich",
+    "category" : "sandwitch",
     "id" : 3002,
     "title" : "샌드위치2",
     "price" : 1000,
@@ -176,7 +184,7 @@
     "image" : "./assets/image/sand1.jpg"
   },
   {
-    "category" : "sandwich",
+    "category" : "sandwitch",
     "id" : 3003,
     "title" : "샌드위치3",
     "price" : 1000,
@@ -184,7 +192,7 @@
     "image" : "./assets/image/sand1.jpg"
   },
   {
-    "category" : "sandwich",
+    "category" : "sandwitch",
     "id" : 3004,
     "title" : "샌드위치4",
     "price" : 1000,
@@ -192,7 +200,7 @@
     "image" : "./assets/image/sand1.jpg"
   },
   {
-    "category" : "sandwich",
+    "category" : "sandwitch",
     "id" : 3005,
     "title" : "샌드위치5",
     "price" : 1000,
@@ -200,7 +208,7 @@
     "image" : "./assets/image/sand1.jpg"
   },
   {
-    "category" : "sandwich",
+    "category" : "sandwitch",
     "id" : 3006,
     "title" : "샌드위치6",
     "price" : 1000,
@@ -208,7 +216,7 @@
     "image" : "./assets/image/sand1.jpg"
   },
   {
-    "category" : "sandwich",
+    "category" : "sandwitch",
     "id" : 3007,
     "title" : "샌드위치7",
     "price" : 1000,
@@ -216,7 +224,7 @@
     "image" : "./assets/image/sand1.jpg"
   },
   {
-    "category" : "sandwich",
+    "category" : "sandwitch",
     "id" : 3008,
     "title" : "샌드위치8",
     "price" : 1000,
@@ -224,7 +232,7 @@
     "image" : "./assets/image/sand1.jpg"
   },
   {
-    "category" : "sandwich",
+    "category" : "sandwitch",
     "id" : 3009,
     "title" : "샌드위치9",
     "price" : 1000,
@@ -232,7 +240,7 @@
     "image" : "./assets/image/sand1.jpg"
   },
   {
-    "category" : "sandwich",
+    "category" : "sandwitch",
     "id" : 3010,
     "title" : "샌드위치10",
     "price" : 1000,

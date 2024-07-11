@@ -1,9 +1,9 @@
 import React from 'react';
-import Title from '../components/common/Title';
+import Title from '@/components/common/Title'
 
 const CartView = () => {
   return (
-    <div className='row'>
+    <div className="row">
       <Title title="장바구니" />
     </div>
   );

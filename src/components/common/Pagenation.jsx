@@ -22,7 +22,7 @@ const PageBlock = styled.span`
   }
 `
 
-const Pagenation = ({totalItems, itemsPerPage, currentPage}) => {
+const Pagenation = ({totalItems, itemsPerPage, currentPage, onChangePage}) => {
   const pageList = []
   const totalPages = Math.ceil(totalItems / itemsPerPage)
   const startPage = Math.max(1, currentPage - 5)
@@ -33,7 +33,10 @@ const Pagenation = ({totalItems, itemsPerPage, currentPage}) => {
   }
 
   const prevPage = () => {
-
+    onChangePage(currentPage-1)
+  }
+  const nextPage = () => {
+    onChangePage(currentPage+1)
   }
   
 
@@ -43,11 +46,11 @@ const Pagenation = ({totalItems, itemsPerPage, currentPage}) => {
       <PageBlock>
         {
           pageList.map(page => (
-            <button key={page} type='button'>{page}</button>
+            <button key={page} type='button' onClick={()=>onChangePage(page)}>{page}</button>
           ))
         }
       </PageBlock>
-      <button className='goend'>다음</button>
+      <button className='goend' onClick={nextPage}>다음</button>
     </PagenationBlock>
   );
 };
