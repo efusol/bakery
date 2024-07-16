@@ -5,7 +5,9 @@ const PagenationBlock = styled.div`
   display:flex;
   justify-content: center; margin:50px 0; 
   .goend { background:#000; color:#fff; 
-    padding:5px 10px; margin:0 5px; }
+    padding:5px 10px; margin:0 5px;
+    &:disabled {background: #555; cursor: default;}
+  }
 `
 const PageBlock = styled.span`
   button { background:#ddd; margin:0 2px; 

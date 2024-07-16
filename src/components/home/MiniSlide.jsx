@@ -18,11 +18,23 @@ const MiniSlideBlock = styled.div`
 `
 const SlideContainer = styled.div`
   position: relative;
-  img {
-    width:90%;
-    margin:0 5%;
-  }
-`;
+`
+
+const Image = styled.img`
+  width:90%;
+  margin:0 5%;
+  transition:all 0.5s; 
+  opacity:${ ({ishovered})=> ishovered=="hover" ? 1 : 0  };
+`
+
+const HoverImage = styled.img`
+  position:absolute;
+  top:0; left:0; 
+  width:90%;
+  margin:0 5%;
+  transition:all 0.5s; 
+  opacity:${ ({ishovered})=> ishovered=="hover" ? 0 : 1  };
+`
 
 const MiniSlide = () => {
   const [currentImage, setCurrentImage] = useState(null)
@@ -86,7 +98,14 @@ const MiniSlide = () => {
         {
           sliders.map((item, index)=>(
             <SlideContainer key={index}>
-              <img src={currentImage==index? item.image2 : item.image1} alt={item.alt} onMouseOver={ ()=>setCurrentImage(index)} onMouseOut={ ()=>setCurrentImage(null)} />
+              <Image src={item.image1} 
+              ishovered={ currentImage==index ? "hover" : "" }
+              />
+              <HoverImage src={item.image2} 
+              onMouseOver={()=>setCurrentImage(index)}
+              onMouseOut={()=>setCurrentImage(null)}
+              ishovered={ currentImage==index ? "hover" : "" }
+              />
             </SlideContainer>
           ))
         }

@@ -3,7 +3,7 @@ import axios from 'axios'
 
 // createSlice = reducer + actions
 // reducer : 상태관리를 위해 사용하는 함수로, 특정한 액션(action)이 발생했을때 상태(state)를 어떻게 변화시킬지를 정의하는 역할을 함
- 
+
 
 const productSlice = createSlice({
   name : 'products',
